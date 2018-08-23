@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Id"
+        android:inputType="number"
+        android:padding="10dp"
+        android:singleLine="true">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textCapWords"
+        android:padding="10dp"
+        android:singleLine="true"></EditText>
+
+    <ImageButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:contentDescription="Delete"
+        android:onClick="onDeleteClicked"
+        android:padding="10dp"
+        android:src="@android:drawable/ic_menu_delete" />
+
+</LinearLayout>
